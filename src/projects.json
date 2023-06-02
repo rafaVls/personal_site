@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Typefight",
+    "description": "A typing game where you get a random sentence, type it in, and compare your time with a global highscore.",
+    "stack": ["Python", "Flask", "Docker", "PostgreSQL", "HTML", "CSS", "JavaScript"],
+    "repo": "",
+    "website": "",
+    "image": "/images/projects/typefight.png"
+  },
+  {
+    "title": "Weatherly",
+    "description": "A fullstack weather app made with Reactjs, Flask and TypeScript.",
+    "stack": ["React", "TypeScript", "Python", "Flask", "CSS"],
+    "repo": "",
+    "website": "",
+    "image": "/images/projects/weatherly.png"
+  },
+  {
+    "title": "Calculator app",
+    "description": "This app is a solution to the Frontend Mentor calculator challenge. It uses multidimensional arrays to store and calculate a full equation after the user presses \"equals\".",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "repo": "https://github.com/rafaVls/calculator_site",
+    "website": "https://calculator-site.vercel.app/",
+    "image": "/images/projects/calculator.png"
+  },
+  {
+    "title": "Previous portfolio site",
+    "description": "The previous iteration of my personal website. It used a headless CMS for the blog section, but I've since moved to other platforms.",
+    "stack": ["Node", "Nextjs", "Ghost CMS", "TypeScript"],
+    "repo": "",
+    "website": "",
+    "image": "/images/projects/homepage.png"
+  }
+]

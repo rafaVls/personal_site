@@ -1,0 +1,87 @@
+.projects {
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  gap: 2.5rem;
+}
+
+.project-card {
+  width: clamp(32rem, 90%, 90rem);
+  min-height: 22rem;
+
+  position: relative;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--background-dark);
+
+  border: 3px solid var(--border-dark);
+  border-radius: 15px;
+  overflow-y: hidden;
+
+  box-shadow: 8px 12px 2px 4px var(--border-light);
+}
+
+.project-card::after {
+  content: "";
+  background: linear-gradient(180deg, transparent, var(--background-dark) 30%);
+  display: block;
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 60%;
+  transition: transform 800ms;
+}
+
+.project-card:last-of-type {
+  margin-bottom: 5rem;
+}
+
+.project-card > .project-info {
+  margin-left: 0.5rem;
+  position: absolute;
+  top: calc(100% - 2.25rem);
+  z-index: 5;
+  transition: bottom 600ms, top 600ms;
+}
+
+.project-stack {
+  margin-top: 1rem;
+}
+
+.project-links {
+  margin-top: 1rem;
+}
+
+.project-links > a:last-of-type {
+  margin-left: 1rem;
+}
+
+.project-title, .project-stack {
+  font-weight: bold;
+}
+
+:is(.project-card:hover, .project-card:focus-within, .project-card:active) > .project-info {
+  top: 1rem;
+}
+
+:is(.project-card:hover, .project-card:focus-within, .project-card:active)::after {
+  transform: translateY(-80%);
+}
+
+@media (prefers-color-scheme: light) {
+  .project-card {
+    background-color: var(--border-light);
+    border: 3px solid var(--border-light);
+  }
+
+  .project-card::after {
+    background: linear-gradient(180deg, transparent, var(--background-light) 20%);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .project-card {
+    min-height: 42rem;
+  }
+}

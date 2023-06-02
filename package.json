@@ -1,0 +1,25 @@
+{
+  "name": "personal_site",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A personal website showcasing who I am and what I can do. It contains a section with the projects I've made",
+  "scripts": {
+    "dev": "vite",
+    "build": "prettier . && tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "personal",
+    "developer",
+    "rafael"
+  ],
+  "author": "Rafael Avilés",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9"
+  }
+}

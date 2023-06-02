@@ -1,0 +1,124 @@
+@font-face {
+  font-family: Source Code Pro;
+  src: url("./fonts/SourceCodePro/SourceCodePro-Regular.ttf");
+}
+
+@font-face {
+  font-family: DM Sans;
+  src: url("./fonts/DM_Sans/DMSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: DM Sans;
+  src: url("./fonts/DM_Sans/DMSans-Bold.ttf");
+  font-weight: bold;
+}
+
+:root {
+  --background-light: #e8e9ea;
+  --background-dark: #333333;
+
+  --text-light: #03191e;
+  --text-dark: #e8e9ea;
+  --links-dark: #c488be;
+
+  --border-light: #03191e;
+  --border-dark: #694966;
+
+  --font-size-mobile: 1.4rem;
+  --font-size-web: 1.6rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font:inherit;
+}
+
+html {
+  color-scheme: dark light;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-dark);
+  overflow-x: hidden;
+}
+
+img, picture {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 7.2rem;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-size: 4.8rem;
+  margin-bottom: 5rem;
+}
+
+p {
+  line-height: 1.4;
+}
+
+a {
+  color: var(--links-dark)
+}
+
+section {
+  scroll-margin-top: 9rem;
+}
+
+section:not(:first-of-type) {
+  margin-top: 20rem;
+}
+
+p, a {
+  font-size: var(--font-size-mobile);
+}
+
+p, h1, h2 {
+  color: var(--text-dark);
+}
+
+h1, h2, h3, a, p {
+  font-family: DM Sans, Helvetica, sans-serif;
+}
+
+h1, h2 {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--background-light);
+    /*
+    background-image: radial-gradient(var(--background-dark) 2px, transparent 1px);
+    background-size: 128px 128px;
+    */
+  }
+
+  a {
+    color: initial;
+  }
+
+  p, h1, h2 {
+    color: var(--text-light);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  p, a {
+    font-size: var(--font-size-web);
+  }
+}

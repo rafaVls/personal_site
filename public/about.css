@@ -1,0 +1,112 @@
+.about-grid {
+  max-width: 100em;
+  padding-inline: 2em;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto 2em auto auto;
+  gap: 7em;
+}
+
+.about-card {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  background-color: var(--background-dark);
+  border: 2px solid var(--border-dark);
+  box-shadow: 8px 12px 2px 4px var(--border-light);
+}
+
+.about-card:nth-of-type(2) {
+  padding-bottom: 2em;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.about-card:nth-of-type(3) {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.about-card > :first-child {
+  font-size: var(--font-size-mobile);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.25em 0 0.25em 0.25em;
+  color: var(--text-light);
+  border-bottom: 2px solid var(--border-dark);
+  background-color: var(--background-light);
+}
+
+.about-card > p {
+  padding-inline: 0.25em;
+}
+
+.programming-language {
+  color: var(--links-dark);
+}
+
+.social-links {
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-logo {
+  width: 40px;
+  aspect-ratio: 1;
+  fill: var(--text-dark);
+}
+
+@media (prefers-color-scheme: light) {
+  .about-card {
+    background-color: var(--background-light);
+    border: 2px solid var(--border-light);
+  }
+
+  .about-card > :first-child {
+    color: var(--text-dark);
+    border-bottom: 2px solid var(--border-light);
+    background-color: var(--border-dark);
+  }
+
+  .programming-language {
+    color: var(--border-dark);
+  }
+
+  .social-logo {
+    fill: var(--text-light);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .about-grid {
+    grid-template-columns: 1em repeat(3, auto) 1em;
+    grid-template-rows: auto auto 2em auto auto;
+    gap: 8em;
+  }
+
+  .about-card:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .about-card:nth-of-type(3) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .about-card > :frist-child {
+    font-size: 1.8rem;
+  }
+
+  .social-links {
+    padding-inline: 10em;
+  }
+}

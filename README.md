@@ -16,3 +16,5 @@ in the technologies I used and the overall website design.
 - CSS3
 - Vitejs
 - Typescript
+
+Icons from ![material design icons on iconify.design](https://icon-sets.iconify.design/mdi/dev-to/)

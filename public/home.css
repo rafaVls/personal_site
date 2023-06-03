@@ -1,96 +1,39 @@
-header {
-  min-height: 6rem;
-  padding-inline: 3rem;
-  margin-bottom: 7rem;
+.header {
+  padding: 1rem;
+  margin-bottom: 5rem;
   position: sticky;
   top: 0;
   z-index: 10;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
   background-color: var(--border-light);
   transition: all 300ms ease-out;
 }
 
 .header-with-shadow {
   box-shadow: 0 5px 15px var(--border-light);
-  min-height: 4rem;
 }
 
-
 .home {
-  max-width: 90%;
   margin-inline: auto;
   display: grid;
   justify-items: center;
   position: relative;
 }
 
-.navigation-panel {
-  --panel-width: 20rem;
-  min-height: 100vh;
-  min-height: 100svh;
-  position: fixed;
-  top: 0;
-  right: -55%;
-  display: grid;
-  align-items: center;
-  background-color: var(--background-dark);
-  border: 2px solid var(--border-dark);
-  box-shadow: 2px 2px 2px var(--border-dark);
-  z-index: 10;
-  transition: right 400ms;
-}
-
 .navigation-items {
-  min-width: var(--panel-width);
   display: grid;
+  grid-auto-flow: column;
   justify-items: center;
-  gap: 8rem;
-}
-
-.hamburger-button {
-  order: 3;
-  background: transparent;
-  border: transparent;
-  cursor: pointer;
-  transition: transform 400ms ease;
-  z-index: 20;
-}
-
-.hamburger-button:hover {
-  transform: scale(1.3);
-}
-
-.hamburger-button[aria-expanded="true"] + .navigation-panel {
-  right: -2px;
-}
-
-
-.hamburger-line {
-  transition: transform 500ms, rotate 500ms, opacity 500ms;
-  transform-origin: center;
-  fill: var(--text-dark);
-}
-
-.hamburger-button[aria-expanded="true"] .top-line {
-  transform: translateY(25px);
-  rotate: 45deg;
-}
-
-.hamburger-button[aria-expanded="true"] .bottom-line {
-  transform: translateY(-25px);
-  rotate: -45deg;
-}
-
-.hamburger-button[aria-expanded="true"] .middle-line {
-  opacity: 0;
+  align-self: end;
 }
 
 .name {
   font-size: 1.6rem;
   font-weight: bold;
   font-family: Source Code Pro, Helvetica, sans-serif;
+  text-align: center;
 }
 
 .description-text {
@@ -145,34 +88,25 @@ header {
     background: linear-gradient(180deg, transparent, var(--background-light) 99%);
   }
 }
+
 @media only screen and (min-width: 800px) {
-  header {
+  .header {
     margin-bottom: initial;
+    padding-inline: 3rem;
+    grid-auto-flow: column;
   }
 
   .name {
+    text-align: start;
     font-size: 2rem;
     flex: 2;
   }
 
-  .navigation-panel {
-    display: initial;
-    position: initial;
-    min-height: initial;
-    min-width: initial;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-  }
-
   .navigation-items {
-    min-height: initial;
     min-width: 60rem;
     grid-auto-flow: column;
-  }
-
-  .hamburger-button {
-    display: none;
+    align-self: center;
+    justify-self: end;
   }
 
   .home {

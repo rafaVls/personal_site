@@ -31,24 +31,3 @@ projectSection.append(...cards);
 (Array.from(projectSection.children) as HTMLElement[]).forEach(project => {
   project.addEventListener("click", () => project.focus());
 });
-
-let timer: number = null;
-hamburgerButton.addEventListener("click", e => {
-  const btn = e.currentTarget as HTMLButtonElement;
-
-  if (btn.getAttribute(btnAriaExpanded) === "false") {
-    navigationPanel.style.display = "grid";
-    timer = setTimeout(() => btn.setAttribute(btnAriaExpanded, "true"), 50);
-    return;
-  }
-
-  btn.setAttribute(btnAriaExpanded, "false");
-  typeof timer === "number" && clearTimeout(timer);
-});
-
-document.addEventListener("keydown", e => {
-  const btnAriaAttribute = hamburgerButton.getAttribute(btnAriaExpanded);
-  if (e.key === "Escape" && btnAriaAttribute === "true") {
-    hamburgerButton.click();
-  }
-});

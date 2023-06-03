@@ -12,7 +12,7 @@
     "description": "A fullstack weather app made with Reactjs, Flask and TypeScript.",
     "stack": ["React", "TypeScript", "Python", "Flask", "CSS"],
     "repo": "https://github.com/rafaVls/Weatherly",
-    "website": "",
+    "website": "https://weatherly-sand.vercel.app/",
     "image": "/images/projects/weatherly.png"
   },
   {

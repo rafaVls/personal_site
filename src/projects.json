@@ -3,7 +3,7 @@
     "title": "Typefight",
     "description": "A typing game where you get a random sentence, type it in, and compare your time with a global highscore.",
     "stack": ["Python", "Flask", "Docker", "PostgreSQL", "HTML", "CSS", "JavaScript"],
-    "repo": "",
+    "repo": "https://gitlab.com/rafaVls/typefight",
     "website": "",
     "image": "/images/projects/typefight.png"
   },
@@ -11,7 +11,7 @@
     "title": "Weatherly",
     "description": "A fullstack weather app made with Reactjs, Flask and TypeScript.",
     "stack": ["React", "TypeScript", "Python", "Flask", "CSS"],
-    "repo": "",
+    "repo": "https://github.com/rafaVls/Weatherly",
     "website": "",
     "image": "/images/projects/weatherly.png"
   },
@@ -24,11 +24,19 @@
     "image": "/images/projects/calculator.png"
   },
   {
+    "title": "Portfolio site",
+    "description": "The current iteration of my personal website. This time around I went for simplicity and minimalism.",
+    "stack": ["TypeScript", "HTML", "CSS", "Vitejs"],
+    "repo": "https://github.com/rafaVls/personal_site",
+    "website": "https://www.rafavls.dev",
+    "image": "/images/projects/personal_site.png"
+  },
+  {
     "title": "Previous portfolio site",
     "description": "The previous iteration of my personal website. It used a headless CMS for the blog section, but I've since moved to other platforms.",
     "stack": ["Node", "Nextjs", "Ghost CMS", "TypeScript"],
-    "repo": "",
+    "repo": "https://github.com/rafaVls/personal-website",
     "website": "",
-    "image": "/images/projects/homepage.png"
+    "image": "/images/projects/previous_site.png"
   }
 ]

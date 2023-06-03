@@ -9,7 +9,7 @@ in the technologies I used and the overall website design.
 - Links to all the places where you can find me on the internet, including my blog posts.
 
 ## Screenshots
-![Landing page of my personal website](./public/images/projects/homepage.png)
+![Landing page of my personal website](./public/images/projects/personal_site.png)
 
 ## Tech Stack
 - HTML5
@@ -17,4 +17,4 @@ in the technologies I used and the overall website design.
 - Vitejs
 - Typescript
 
-Icons from ![Material Design Icons on iconify.design](https://icon-sets.iconify.design/mdi/)
+Icons from Material Design Icons on iconify.design

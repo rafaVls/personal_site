@@ -1,12 +1,9 @@
 import ProjectCard from "./ProjectCard";
 import projects from "./projects.json";
 
-const hamburgerButton = document.getElementById("hamburger-button");
 const projectSection = document.getElementById("projects");
-const navigationPanel = document.getElementById("navigation");
 const heroTitle = document.getElementById("hero-title");
 const header = document.getElementById("header");
-const btnAriaExpanded = "aria-expanded";
 
 new IntersectionObserver(([entry, ..._rest], _observer) => {
   // isIntersecting is true on first load

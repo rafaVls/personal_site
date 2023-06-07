@@ -1,7 +1,7 @@
 [
   {
     "title": "Typefight",
-    "description": "A typing game where you get a random sentence, type it in, and compare your time with a global highscore.",
+    "description": "This typing game utilizes a PostgreSQL database running in a Docker container in the backend, as well as Flask’s SQLAlchemy, which I utilized to build a REST API.",
     "stack": ["Python", "Flask", "Docker", "PostgreSQL", "HTML", "CSS", "JavaScript"],
     "repo": "https://gitlab.com/rafaVls/typefight",
     "website": "http://45-79-91-246.ip.linodeusercontent.com",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Weatherly",
-    "description": "A fullstack weather app made with Reactjs, Flask and TypeScript.",
+    "description": "Full-stack weather app. The development for this app included a server setup to handle OpenWeatherMap data and serve it through REST API endpoints, and a React-based front end with state management.",
     "stack": ["React", "TypeScript", "Python", "Flask", "CSS"],
     "repo": "https://github.com/rafaVls/Weatherly",
     "website": "https://weatherly-sand.vercel.app/",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Portfolio site",
-    "description": "The current iteration of my personal website. This time around I went for simplicity and minimalism.",
+    "description": "The current iteration of my portfolio site. This website was created as a portfolio hub. The homepage was designed with simplicity and minimalism in mind. Built with pure HTML, CSS and TypeScript, with Vitejs for live-server and building.",
     "stack": ["TypeScript", "HTML", "CSS", "Vitejs"],
     "repo": "https://github.com/rafaVls/personal_site",
     "website": "https://www.rafavls.dev",
@@ -36,7 +36,7 @@
     "description": "The previous iteration of my personal website. It used a headless CMS for the blog section, but I've since moved to other platforms.",
     "stack": ["Node", "Nextjs", "Ghost CMS", "TypeScript"],
     "repo": "https://github.com/rafaVls/personal-website",
-    "website": "",
+    "website": null,
     "image": "/images/projects/previous_site.png"
   }
 ]

@@ -53,8 +53,8 @@
   margin-top: 1rem;
 }
 
-.project-links > a:last-of-type {
-  margin-left: 1rem;
+.project-links > a:first-of-type {
+  margin-right: 1rem;
 }
 
 .project-title, .project-stack {

@@ -4,7 +4,7 @@
     "description": "This typing game utilizes a PostgreSQL database running in a Docker container in the backend, as well as Flask’s SQLAlchemy, which I utilized to build a REST API.",
     "stack": ["Python", "Flask", "Docker", "PostgreSQL", "HTML", "CSS", "JavaScript"],
     "repo": "https://gitlab.com/rafaVls/typefight",
-    "website": "http://45-79-91-246.ip.linodeusercontent.com",
+    "website": "https://typefight.icu",
     "image": "/images/projects/typefight.png"
   },
   {

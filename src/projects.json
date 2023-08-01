@@ -5,7 +5,7 @@
     "stack": ["Python", "Flask", "Docker", "PostgreSQL", "HTML", "CSS", "JavaScript"],
     "repo": "https://gitlab.com/rafaVls/typefight",
     "website": "https://typefight.icu",
-    "image": "/images/projects/typefight.png"
+    "image": "/images/projects/typefight.webp"
   },
   {
     "title": "Weatherly",
@@ -13,7 +13,7 @@
     "stack": ["React", "TypeScript", "Python", "Flask", "CSS"],
     "repo": "https://github.com/rafaVls/Weatherly",
     "website": "https://weatherly-sand.vercel.app/",
-    "image": "/images/projects/weatherly.png"
+    "image": "/images/projects/weatherly.webp"
   },
   {
     "title": "Calculator app",
@@ -21,7 +21,7 @@
     "stack": ["HTML", "CSS", "JavaScript"],
     "repo": "https://github.com/rafaVls/calculator_site",
     "website": "https://calculator-site.vercel.app/",
-    "image": "/images/projects/calculator.png"
+    "image": "/images/projects/calculator.webp"
   },
   {
     "title": "Portfolio site",
@@ -29,7 +29,7 @@
     "stack": ["TypeScript", "HTML", "CSS", "Vitejs"],
     "repo": "https://github.com/rafaVls/personal_site",
     "website": "https://www.rafavls.dev",
-    "image": "/images/projects/personal_site.png"
+    "image": "/images/projects/personal_site.webp"
   },
   {
     "title": "Previous portfolio site",
@@ -37,6 +37,6 @@
     "stack": ["Node", "Nextjs", "Ghost CMS", "TypeScript"],
     "repo": "https://github.com/rafaVls/personal-website",
     "website": null,
-    "image": "/images/projects/previous_site.png"
+    "image": "/images/projects/previous_site.webp"
   }
 ]

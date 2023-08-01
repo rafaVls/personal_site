@@ -1,9 +1,3 @@
-.projects-heading::after {
-  content: "(tap/click them!)";
-  display: block;
-  font-size: 1.2rem;
-}
-
 .projects {
   display: grid;
   grid-auto-flow: row;
